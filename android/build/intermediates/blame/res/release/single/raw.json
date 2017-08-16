@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/res/merged/release/raw/rp.wav",
+        "source": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/src/main/res/raw/rp.wav"
+    },
+    {
+        "merged": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/res/merged/release/raw/msg.wav",
+        "source": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/src/main/res/raw/msg.wav"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/mb/.android/build-cache/a8320e456cb173f12657dc8cd1262c2ca05820cb/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/mb/.android/build-cache/a8320e456cb173f12657dc8cd1262c2ca05820cb/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

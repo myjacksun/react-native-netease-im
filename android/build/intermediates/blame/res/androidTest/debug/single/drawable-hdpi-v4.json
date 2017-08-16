@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_stat_notify_msg.png",
+        "source": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/bundles/debug/res/drawable-hdpi-v4/ic_stat_notify_msg.png"
+    },
+    {
+        "merged": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/nim_avatar_group.png",
+        "source": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/bundles/debug/res/drawable-hdpi-v4/nim_avatar_group.png"
+    },
+    {
+        "merged": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/nim_avatar_default.png",
+        "source": "/Users/mb/ft_projects/fuxiong_app/node_modules/react-native-netease-im/android/build/intermediates/bundles/debug/res/drawable-hdpi-v4/nim_avatar_default.png"
+    }
+]

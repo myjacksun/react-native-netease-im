@@ -1,0 +1,85 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-netease-im@git+https://github.com/myjacksun/react-native-netease-im.git",
+        "scope": null,
+        "escapedName": "react-native-netease-im",
+        "name": "react-native-netease-im",
+        "rawSpec": "git+https://github.com/myjacksun/react-native-netease-im.git",
+        "spec": "git+https://github.com/myjacksun/react-native-netease-im.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:myjacksun/react-native-netease-im.git",
+          "sshUrl": "git+ssh://git@github.com/myjacksun/react-native-netease-im.git",
+          "httpsUrl": "git+https://github.com/myjacksun/react-native-netease-im.git",
+          "gitUrl": "git://github.com/myjacksun/react-native-netease-im.git",
+          "shortcut": "github:myjacksun/react-native-netease-im",
+          "directUrl": "https://raw.githubusercontent.com/myjacksun/react-native-netease-im/master/package.json"
+        }
+      },
+      "/Users/mb/ft_projects/fuxiong_app"
+    ]
+  ],
+  "_from": "git+https://github.com/myjacksun/react-native-netease-im.git",
+  "_id": "react-native-netease-im@1.0.7",
+  "_inCache": true,
+  "_location": "/react-native-netease-im",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-netease-im@git+https://github.com/myjacksun/react-native-netease-im.git",
+    "scope": null,
+    "escapedName": "react-native-netease-im",
+    "name": "react-native-netease-im",
+    "rawSpec": "git+https://github.com/myjacksun/react-native-netease-im.git",
+    "spec": "git+https://github.com/myjacksun/react-native-netease-im.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:myjacksun/react-native-netease-im.git",
+      "sshUrl": "git+ssh://git@github.com/myjacksun/react-native-netease-im.git",
+      "httpsUrl": "git+https://github.com/myjacksun/react-native-netease-im.git",
+      "gitUrl": "git://github.com/myjacksun/react-native-netease-im.git",
+      "shortcut": "github:myjacksun/react-native-netease-im",
+      "directUrl": "https://raw.githubusercontent.com/myjacksun/react-native-netease-im/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/myjacksun/react-native-netease-im.git#ae0ef7bfc9ffb660975fd717ee2dcbe58ed874e7",
+  "_shasum": "fde90d4f811ce0c7a8ad3d4925471aa7344a4e61",
+  "_shrinkwrap": null,
+  "_spec": "react-native-netease-im@git+https://github.com/myjacksun/react-native-netease-im.git",
+  "_where": "/Users/mb/ft_projects/fuxiong_app",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/reactnativecomponent/react-native-netease-im/issues"
+  },
+  "dependencies": {},
+  "description": "网易云信ReactNative插件",
+  "devDependencies": {},
+  "gitHead": "ae0ef7bfc9ffb660975fd717ee2dcbe58ed874e7",
+  "homepage": "https://github.com/reactnativecomponent/react-native-netease-im#readme",
+  "keywords": [
+    "react-native"
+  ],
+  "license": "",
+  "main": "index.js",
+  "name": "react-native-netease-im",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "readme": "\nReact Native的网易云信插件\n## Demo\n[react-native-chat-demo](https://github.com/reactnativecomponent/react-native-chat-demo)\n\n#### 注意: react-native版本需要0.40.0及以上\n\n## 如何安装\n\n### 1.首先安装npm包\n\n```bash\nnpm install react-native-netease-im --save\n```\n\n### 2.link\n```bash\nreact-native link react-native-netease-im\n```\n\n#### 手动link~（如果不能够自动link）\n#####ios\na.打开XCode's工程中, 右键点击Libraries文件夹 ➜ Add Files to <...>\nb.去node_modules ➜ react-native-netease-im ➜ ios ➜ 选择 RNNeteaseIm.xcodeproj\nc.在工程Build Phases ➜ Link Binary With Libraries中添加libRNNeteaseIm.a\n\n#####Android\n\n```\n// file: android/settings.gradle\n...\n\ninclude ':react-native-netease-im'\nproject(':react-native-netease-im').projectDir = new File(settingsDir, '../node_modules/react-native-netease-im/android')\n```\n\n```\n// file: android/app/build.gradle\n...\n\ndependencies {\n    ...\n    compile project(':react-native-netease-im')\n}\n```\n\n`android/app/src/main/java/<你的包名>/MainActivity.java`\n\n```\nimport com.netease.im.uikit.permission.MPermission;\n\npublic class MainActivity extends ReactActivity {\n\n ......\n\n @Override\n public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {\n        MPermission.onRequestPermissionsResult(this, requestCode, permissions, grantResults);\n }\n ```\n\n`android/app/src/main/java/<你的包名>/MainApplication.java`中添加如下两行：\n\n```java\n...\nimport com.netease.im.RNNeteaseImPackage;  // 在public class MainApplication之前import\nimport com.netease.im.IMApplication;\n\npublic class MainApplication extends Application implements ReactApplication {\n\n  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {\n    @Override\n    protected boolean getUseDeveloperSupport() {\n      return BuildConfig.DEBUG;\n    }\n\n    @Override\n    protected List<ReactPackage> getPackages() {\n      return Arrays.<ReactPackage>asList(\n          new RNNeteaseImPackage(), // 然后添加这一行\n          new MainReactPackage()\n      );\n    }\n  };\n\n  @Override\n  public ReactNativeHost getReactNativeHost() {\n      return mReactNativeHost;\n  }\n   @Override\n  public void onCreate() {\n    //初始化方法appId以及appKey在小米开放平台获取，小米推送证书名称在网易云信后台设置\n    IMApplication.setDebugAble(BuildConfig.DEBUG);\n    IMApplication.init(this, MainActivity.class,R.drawable.ic_stat_notify_msg,new    IMApplication.MiPushConfig(\"小米推送证书名称\",\"小米推送appId\",\"小米推送的appKey\"));\n   ...\n  }\n}\n```\n\n\n### 3.工程配置\n#### iOS配置\ninstall with CocoaPods\n```\npod 'NIMSDK'\npod 'SSZipArchive', '~> 1.2'\npod 'Reachability', '~> 3.1.1'\npod 'CocoaLumberjack', '~> 2.0.0-rc2'\npod 'FMDB', '~>2.5' \n```\nRun `pod install`\n\n在工程target的`Build Phases->Link Binary with Libraries`中加入`、libsqlite3.tbd、libc++、libz.tbd、CoreTelephony.framework`\n\n\n\n在你工程的`AppDelegate.m`文件中添加如下代码：\n\n```\n...\n#import <NIMSDK/NIMS\n#import \"NTESSDKConfigDelegate.h\"\n@interface AppDelegate ()\n@property (nonatomic,strong) NTESSDKConfigDelegate *sdkConfigDelegate;\n@end\n@implementation AppDelegate\n\n- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions\n{\n...\n[self setupNIMSDK];\n[self registerAPNs];\n...\nreturn YES;\n}\n- (void)setupNIMSDK\n{\n//在注册 NIMSDK appKey 之前先进行配置信息的注册，如是否使用新路径,是否要忽略某些通知，是否需要多端同步未读数\nself.sdkConfigDelegate = [[NTESSDKConfigDelegate alloc] init];\n[[NIMSDKConfig sharedConfig] setDelegate:self.sdkConfigDelegate];\n[[NIMSDKConfig sharedConfig] setShouldSyncUnreadCount:YES];\n//appkey 是应用的标识，不同应用之间的数据（用户、消息、群组等）是完全隔离的。\n//注册APP，请将 NIMSDKAppKey 换成您自己申请的App Key\n[[NIMSDK sharedSDK] registerWithAppID:@\"appkey\" cerName:@\"证书名称\"];\n}\n\n#pragma mark - misc\n- (void)registerAPNs\n{\n[[UIApplication sharedApplication] registerForRemoteNotifications];\nUIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;\nUIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types categories:nil];\n[[UIApplication sharedApplication] registerUserNotificationSettings:settings];\n}\n\n- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken\n{\n[[NIMSDK sharedSDK] updateApnsToken:deviceToken];\n}\n\n- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{\nNSLog(@\"receive remote notification:  %@\", userInfo);\n}\n\n- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)error\n{\nNSLog(@\"fail to get apns token :%@\",error);\n}\n\n- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {\n  return [RCTLinkingManager application:application openURL:url sourceApplication:sourceApplication annotation:annotation];\n}\n```\n\n#### Android配置\n\n在`android/app/build.gradle`里，defaultConfig栏目下添加如下代码：\n\n\n在`AndroidManifest.xml`里，添加如下代码：\n```\n< manifest\n\n    ......\n\n    <!-- SDK 权限申明, 第三方 APP 接入时，请将 com.im.demo 替换为自己的包名 -->\n    <!-- 和下面的 uses-permission 一起加入到你的 AndroidManifest 文件中。 -->\n    <permission\n        android:name=\"com.im.demo.permission.RECEIVE_MSG\"\n        android:protectionLevel=\"signature\"/>\n    <!-- 接收 SDK 消息广播权限， 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->\n    <uses-permission android:name=\"com.im.demo.permission.RECEIVE_MSG\"/>\n    <!-- 小米推送 -->\n    <permission\n        android:name=\"com.im.demo.permission.MIPUSH_RECEIVE\"\n        android:protectionLevel=\"signature\"/>\n    <uses-permission android:name=\"com.im.demo.permission.MIPUSH_RECEIVE\"/>\n\n    ......\n    < application\n            ......\n            <!-- 设置你的网易聊天App Key -->\n             <meta-data\n                        android:name=\"com.netease.nim.appKey\"\n                        android:value=\"App Key\" />\n\n```\n\n## 如何使用\n\n### 引入包\n\n```\nimport NIM from 'react-native-netease-im';\n```\n\n### API\n#### NIM.login()\n```javascript\n// 登录参数 \n{\n\taccid: \"\", //云信注册帐号\n    token:\"\" //登录的token\n}\n```\n返回一个`Promise`对象\n\n#### 监听会话\n```\nNativeAppEventEmitter.addListener(\"observeRecentContact\",(data)=>{\n  console.log(data); //返回内容android和ios有区别\n})；\n```\n更多接口请参阅`index.js`,或者参考Demo\n\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactnativecomponent/react-native-netease-im.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.7"
+}
