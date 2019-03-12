@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RCTEventEmitter.h"
-#import "RCTBridgeModule.h"
+#import "react/RCTBridgeModule.h"
 
 @interface RNNotificationCenter :  NSObject<RCTBridgeModule>
 + (instancetype)sharedCenter;
